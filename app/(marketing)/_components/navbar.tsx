@@ -1,6 +1,6 @@
 "use client";
 
-import { useSctollTop } from "@/hooks/use-scroll-top";
+import { useScrollTop } from "@/hooks/use-scroll-top";
 import { ModeToggle } from "@/components/mode-toggle";
 import { cn } from "@/lib/utils";
 import Logo from "./logo";
@@ -11,7 +11,7 @@ import { Spinner } from "@/components/spinner";
 import Link from "next/link";
 
 const Navbar = () => {
-  const scrolled = useSctollTop();
+  const scrolled = useScrollTop();
   const { isAuthenticated, isLoading } = useConvexAuth();
 
   return (
